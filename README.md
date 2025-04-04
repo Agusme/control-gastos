@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# 💸 Control de Gastos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React + Vite** para llevar un control eficiente de tus gastos personales. Permite gestionar un presupuesto, registrar gastos, filtrarlos por categoría y mantener los datos aunque cierres el navegador. Todo con una interfaz moderna y responsive gracias a **TailwindCSS**.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✍️ Agregar, editar y eliminar gastos
+- 📂 Filtro de gastos por categoría
+- 📅 Selector de fecha con `react-date-picker`
+- 🎯 Gestión del presupuesto inicial
+- 💾 Persistencia de datos con **LocalStorage**
+- 🔁 Swipe en cada gasto para editar o eliminar (`react-swipeable-list`)
+- 🟢 Visualización del presupuesto restante con `react-circular-progressbar`
+- 🌐 Estado global con **Context API** + custom hook (`useBudget`)
+- 💅 Interfaz responsive con **TailwindCSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologías y herramientas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- ⚛️ React + Vite
+- 🎨 TailwindCSS
+- 🧠 Context API + Custom Hooks
+- 📅 react-date-picker
+- 🔁 react-swipeable-list
+- 🔵 react-circular-progressbar
+- 💽 LocalStorage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📸 Vista previa
+![Vista previa de la app](https://i.imgur.com/mvsUFIj.png)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧑‍💻 Instalación y uso
+
+1. Cloná este repositorio  
+   ```bash
+   git clone https://github.com/Agusme/control-gastos.git
+
+2. Instalá las dependencias 
+   ```bash
+   npm install
+
+3. Inicia el entorno de desarrollo
+   ```bash
+   npm run dev
+
+### Autor
+Desarrollado por Agustina Mena 👩🏽‍💻
+[Linkedin](https://www.linkedin.com/in/agustina-mena-169298204/)
